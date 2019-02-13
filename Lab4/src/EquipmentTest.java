@@ -26,10 +26,10 @@ public class EquipmentTest
 		Equipment equipment3 = new Equipment("Batarang/6,2.0,5.0,A boomerang for bats");
 		
 		Assert.assertTrue(equipment.equals(equipment1));
-		Assert.assertTrue(equipment.equals(equipment2));
-		Assert.assertTrue(equipment.equals(equipment3));
 		
-		Assert.assertTrue(equipment2.equals(equipment3));
+		Assert.assertFalse(equipment.equals(equipment2));
+		Assert.assertFalse(equipment.equals(equipment3));
+		Assert.assertFalse(equipment2.equals(equipment3));
 	}
 	
 	public void toStringTest() throws AssertException
