@@ -1,7 +1,7 @@
 public class Todo {/*
 Lab Section_________: 12
 Last Modified_______: 2019-2-11
-OU ID_______________: XXXXXXXXX
+OU ID_______________: 113457929
 OU EMAIL____________: thomaspresicci@ou.edu
 
 Tasks:
@@ -19,9 +19,9 @@ Estimated Time (minutes):
 5. 20
 
 Actual Time (minutes):
-1. 
-2. 
-3. 
-4. 
-5. 
+1. 3
+2. 20
+3. 3
+4. 10
+5. 30
 */}
