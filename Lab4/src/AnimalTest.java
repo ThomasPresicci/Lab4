@@ -61,6 +61,32 @@ public class AnimalTest
     	Assert.assertEquals(height3, animal3.getHeight(), 0.01);
     }
     
+	public void equalsTest() throws AssertException
+	{
+    	String color1 = "Purple";
+    	String name1 = "Zebra";
+    	Double weight1 = 200.00;
+    	Double height1 = 2.00;
+    	
+    	String color2 = "Yellow";
+    	String name2 = "Dog";
+    	Double weight2 = 50.00;
+    	Double height2 = 1.00;
+    	
+    	String color3 = "Purple";
+    	String name3 = "Zebra";
+    	Double weight3 = 200.00;
+    	Double height3 = 2.00;
+    	
+    	Animal animal1 = new Animal(color1, name1, weight1, height1);
+    	Animal animal2 = new Animal(color2, name2, weight2, height2);
+    	Animal animal3 = new Animal(color3, name3, weight3, height3);
+		
+		Assert.assertFalse(animal1.equals(animal2));
+		Assert.assertFalse(animal3.equals(animal2));
+		Assert.assertTrue(animal1.equals(animal3));
+	}
+    
     public void toStringTest() throws AssertException
     {
     	String color = "Purple";
